@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 img = cv2.imread('/home/mufengjun260/PycharmProjects/SLAM-Study/Sample1.jpg', 0)
 
-fast = cv2.FastFeatureDetector_create(threshold=50, nonmaxSuppression=False,
+fast = cv2.FastFeatureDetector_create(threshold=20, nonmaxSuppression=False,
                                       type=cv2.FAST_FEATURE_DETECTOR_TYPE_9_16)  # 获取FAST角点探测器
 
 kp = fast.detect(img, None)  # 描述符
